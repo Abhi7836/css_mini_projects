@@ -12,6 +12,7 @@
   background-size: cover;
   transition: 0.4s;
   position: relative;
+  background-repeat: no-repeat;
 }
 
 .slider-container {
@@ -33,6 +34,7 @@
   left: -15vw;
   transition: 0.4s ease;
   z-index: 1;
+  background-repeat: no-repeat;
 }
 
 .slide.active {

@@ -1,0 +1,22 @@
+#inc-counter{
+    background-color: #8e44ad;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .counter-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 50px;
+  }
+  .cntr{
+      padding-left: 3rem;
+  }
+  .counter {
+    font-size: 60px;
+    margin-top: 10px;
+  }

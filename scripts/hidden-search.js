@@ -1,7 +1,7 @@
 
-const search = document.querySelector('.search')
-const btn = document.querySelector('.btn')
-const input = document.querySelector('.input')
+const search = document.querySelector('.hiddensearch')
+const btn = document.querySelector('.hiddenbtn')
+const input = document.querySelector('.hiddeninput')
 
 btn.addEventListener('click', () => {
     search.classList.toggle('active')
