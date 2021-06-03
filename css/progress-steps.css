@@ -9,9 +9,9 @@
 }
 
 #progress-steps{ 
- display:flex;
+ /*display:flex;
  align-items: center;
- justify-content: center;
+ justify-content: center;*/
  overflow: hidden;
  padding :2rem;
  flex-direction: column;
