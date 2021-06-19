@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../css/calculator.css">
   <link rel="stylesheet" href="../css/clock.css">
   <link rel="stylesheet" href="../css/productcard.css">
+  <link rel="stylesheet" href="../css/switch.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -36,7 +37,8 @@
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#hexag">hexagon</a></li>
                   <li><a class="dropdown-item" href="#cal">Calculator</a></li>
-                  <li><a class="dropdown-item" href="#clockcss">clock</a></li>
+                  <li><a class="dropdown-item" href="#switch">Switch</a></li>
+                  <li><a class="dropdown-item" href="#clockcss">Clock</a></li>
                   <li><a class="dropdown-item" href="#productcard">product_card</a></li>            
                 </ul>
               </li>
@@ -47,29 +49,47 @@
 		   <div class="container-fluid"></div>
 	   	<div id="cursor"></div>
    	</section>
-    <section id="cal">
-      <form  class="calculator" name="calc">
-        <input class="value" type="text" name="txt"  readonly/>  
-        <span class="num clear" onclick="calc.txt.value = ''"/>c</span>
-        <span class="num" onclick="document.calc.txt.value += '/' "/>/</span>
-        <span class="num" onclick="document.calc.txt.value += '*' "/>*</span>
-        <span class="num" onclick="document.calc.txt.value += '7' "/>7</span>
-        <span class="num" onclick="document.calc.txt.value += '8' "/>8</span>
-        <span class="num" onclick="document.calc.txt.value += '9' "/>9</span>
-        <span class="num" onclick="document.calc.txt.value += '-' "/>-</span>
-        <span class="num" onclick="document.calc.txt.value += '4' "/>4</span>
-        <span class="num" onclick="document.calc.txt.value += '5' "/>5</span>
-        <span class="num" onclick="document.calc.txt.value += '6' "/>6</span>
-        <span class="num plus" onclick="document.calc.txt.value += '+' "/>+</span>
-        <span class="num" onclick="document.calc.txt.value += '1' "/>1</span>
-        <span class="num" onclick="document.calc.txt.value += '2' "/>2</span>
-        <span class="num" onclick="document.calc.txt.value += '3' "/>3</span>
-        <span class="num" onclick="document.calc.txt.value += '0' "/>0</span>
-        <span class="num" onclick="document.calc.txt.value += '00' "/>00</span>
-        <span class="num" onclick="document.calc.txt.value += '.' "/>.</span>
-        <span class="num equal" onclick="document.calc.txt.value = eval(calc.txt.value)"/>=</span>
-      </form>
-    </section>
+    <div class="row">
+     <div class="col-md-6" style="padding:0 !important; margin:0 !important">
+      <section id="cal">
+        <form  class="calculator" name="calc">
+          <input class="value" type="text" name="txt"  readonly/>  
+          <span class="num clear" onclick="calc.txt.value = ''"/>c</span>
+          <span class="num" onclick="document.calc.txt.value += '/' "/>/</span>
+          <span class="num" onclick="document.calc.txt.value += '*' "/>*</span>
+          <span class="num" onclick="document.calc.txt.value += '7' "/>7</span>
+          <span class="num" onclick="document.calc.txt.value += '8' "/>8</span>
+          <span class="num" onclick="document.calc.txt.value += '9' "/>9</span>
+          <span class="num" onclick="document.calc.txt.value += '-' "/>-</span>
+          <span class="num" onclick="document.calc.txt.value += '4' "/>4</span>
+          <span class="num" onclick="document.calc.txt.value += '5' "/>5</span>
+          <span class="num" onclick="document.calc.txt.value += '6' "/>6</span>
+          <span class="num plus" onclick="document.calc.txt.value += '+' "/>+</span>
+          <span class="num" onclick="document.calc.txt.value += '1' "/>1</span>
+          <span class="num" onclick="document.calc.txt.value += '2' "/>2</span>
+          <span class="num" onclick="document.calc.txt.value += '3' "/>3</span>
+          <span class="num" onclick="document.calc.txt.value += '0' "/>0</span>
+          <span class="num" onclick="document.calc.txt.value += '00' "/>00</span>
+          <span class="num" onclick="document.calc.txt.value += '.' "/>.</span>
+          <span class="num equal" onclick="document.calc.txt.value = eval(calc.txt.value)"/>=</span>
+        </form>
+      </section>
+     </div>
+     <div class="col-md-6" style="padding:0 !important; margin:0 !important">
+      <section id="switch">
+        <label>
+          <input type="checkbox" name="">
+          <span class="check"></span>
+          <span class="btn"></span>
+        </label>
+        <label>
+          <input type="checkbox" name="">
+          <span class="check"></span>
+          <span class="btn"></span>
+        </label>
+      </section>
+     </div>
+    </div>
     <div class="row">
       <div class="col-md-6" style="padding:0 !important; margin:0 !important">
       <section id="clockcss">
